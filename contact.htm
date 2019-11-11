@@ -21,8 +21,6 @@ body {
   overflow-x: hidden;
   padding-top: 20px;
 }
-
-
 .sidenav a, .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -36,16 +34,13 @@ body {
   cursor: pointer;
   outline: none;
 }
-
 .sidenav a:hover, .dropdown-btn:hover {
   color: #f1f1f1;
 }
-
 .banner {
   position: relative;
   font-family: Arial;
 }
-
 .bannertext {
   position: absolute;
   bottom: 400px;
@@ -61,7 +56,6 @@ body {
   background-color: green;
   color: white;
 }
-
 .dropdown-container {
   display: none;
   background-color: #262626;
@@ -71,7 +65,6 @@ body {
   float: right;
   padding-right: 8px;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -90,24 +83,32 @@ body {
   font-size: 20px; 
   padding: 0px 10px;
 }
-
 a:link {
   color: red;
 }
-
-
 a:visited {
   color: green;
 }
-
-
 a:hover {
   color: hotpink;
 }
-
-
 a:active {
   color: blue;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 </style>
 
@@ -115,7 +116,7 @@ a:active {
 <body>
 
 <div class="banner">
-  <img src="banner.jpg" alt="Nature" style="width:100%;">
+  <img src="images/banner.jpg" alt="Nature" style="width:100%;">
   <div class="bannertext">
     <hr>Welcome to FAS group website</hr>
     <hr>What a beautiful sunrise</hr>
@@ -123,9 +124,32 @@ a:active {
 </div>
 
 <div class="main">
-  <h2>This will be heading</h2>
-  <p>Content.Content.Content.Content.Content.Content.Content.Content.Content.Content.<br></p>
-  <p>Some random text..</p>
+  <h2 style = "text-align:center">Contact</h2>
+  <p style = "text-align:center">Have any questions or wish to provide feedback? Please refer to our contact information below.<br></p>
+  <table>
+  <tr>
+    <th>Website Developer</th>
+    <th>Phone</th>
+    <th>Email</th>
+  </tr>
+  <tr>
+    <td>Skyler Waite</td>
+    <td>(808)123-4567</td>
+    <td><a href="mailto:waitesky@hawaii.edu">waitesky@hawaii.edu</a></td>
+  </tr>
+  <tr>
+    <td>Alvin Ma</td>
+    <td>(808)987-6543</td>
+    <td><a href="mailto:alvinma@hawaii.edu">alvinma@hawaii.edu</a></td>
+  </tr>
+  <tr>
+    <td>Frederick Thomas</td>
+    <td>(808)147-8529</td>
+    <td><a href="mailto:alvinma@hawaii.edu">fwthomas@hawaii.edu</a></td>
+</table>
+
+</body>
+</html>
 </div>
 
 <div class="sidenav">
@@ -147,7 +171,6 @@ a:active {
 <script>
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
-
 for (i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function() {
   this.classList.toggle("active");
