@@ -1,4 +1,140 @@
 body{
+	font-family: "Lato", sans-serif;
     margin: 0px;
-{
+	padding:0px;
+	background-image: url("background.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 
+.banner {
+	z-index:999;
+	border: white 4px solid;
+	top:0;
+	margin:0px;
+	position:fixed;
+	background-image: url("bannerlong.jpg");
+	background-size: cover;
+	width:100%;
+
+}
+.bannertext {
+	text-align: center;
+	position: relative;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px; 
+}
+
+.banner > .banner-image{
+	width: 100%;
+	display: block;
+}
+.textbox{
+	background-color: rgba(255,255,255,.6);
+	color: black;
+	width:70%;
+	line-height: 1.6em;
+	padding: 20px;
+	margin-bottom: 20px;
+	margin-left:20px;
+	border-radius:20px;
+	box-shadow: 7px 7px 5px black;
+}
+
+.sidenav {
+	height: 100%;
+	width: 200px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #ffd1dc;
+	overflow-x: hidden;
+	padding-top: 170px;
+	attachment:fixed;
+}
+
+.sidenav a, .dropdown-btn {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: block;
+	border: none;
+	background: none;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {	
+	color: #f1f1f1;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+@media screen and (min-width: 450px) {
+.sidenav {
+	  display:inline;
+}
+
+.sidenav a {
+	  font-size: 18px;}
+}
+.footer {
+  z-index:999;
+  margin-top:100px;
+  position: relatve;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  color: yellow;
+  text-align: center;
+}
+
+.main {
+  margin-left: 200px; 
+  margin-top: 200px;
+  font-size: 20px;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: blue;
+}
+@media only screen and (min-width: 768) {
+body {
+	background-image:url('fred.jpg');
+	background-color: lightblue;
+  }
+}

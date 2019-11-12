@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hawaiian Animal Encyclopedia</title>
+<title>Hawaiian Animal Encyclopedia: About Us</title>
 <meta name="Hawaiian Animals" content="">
 <meta name="ITS-227 Group" content="Hawaii", "Animals">
 <link rel="stylesheet" href="hawaiiananimals.css">
@@ -12,6 +12,21 @@
 <!--Opacity filter Alvin-->
 <!--Horizontal ruler done-->
 <style>
+.profilepic{
+	padding: 10px;
+	width:80%;
+	border: white 6px solid;
+	opacity: .95;
+	margin:20px;
+	center;
+}
+
+.bios{
+width:80%;
+display:grid;
+grid-template-columns: 40% 40% 40%;
+grid-gap: 10px;
+}
 </style>
 </head>
 
@@ -19,34 +34,34 @@
 <!--Styled the banner -Skyler-->
 <div class = "banner">
 	<div class="bannertext">
-		<h1>Welcome to FAS group website</h1>
-		<h2>What a beautiful sunrise</h2>
+		<h1>About Team FAS</h1>
+		<h2>We're cool</h2>
 	</div>
 </div>
 
 <div class="main">
 <!--Styled the text boxes -Skyler-->
-	<div class = "textbox">
-		<h2>Lorem Ipsum</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim neque viverra, rhoncus libero vel, gravida augue. Sed congue semper ipsum quis malesuada. Integer porta nisl metus, nec tempor tellus fermentum vel. Suspendisse facilisis vulputate sollicitudin. Phasellus a velit diam. Vivamus sed dui nec odio tristique tincidunt. Cras eu rutrum orci. Praesent quam felis, maximus sed dolor quis, convallis scelerisque nisl. Nunc erat lectus, semper sed congue non, sodales a quam. Donec orci orci, bibendum sed elit et, pellentesque fermentum erat. Mauris lacinia convallis elit at faucibus. Donec vestibulum eu sapien vitae varius. Nunc pellentesque ex dolor, molestie efficitur arcu luctus in. Nam quis condimentum turpis. Duis sit amet porta nulla. Aenean in erat ornare, hendrerit lectus nec, eleifend justo.<p>
-
-		<p>Praesent augue est, tincidunt vel varius sed, facilisis non magna. Etiam blandit, leo nec tempus aliquet, risus urna dapibus sem, quis euismod lectus felis commodo quam. Morbi vel odio ut sapien porttitor fringilla. Etiam rutrum mauris hendrerit, pellentesque nisl et, sodales ante. Pellentesque dapibus accumsan enim, ac molestie lacus molestie ac. Ut vitae erat ac sem posuere eleifend nec id quam. Duis ultrices sagittis neque, vel semper ligula varius nec.</p>
-	</div>
-  <div class = "textbox">
-  <p>Some random text..</p>
-  </div>
-  <!--Image map by Fred -->
-  <!-- This image map sets the Hawaii islands as clickables links -->
-  <img src="mapHawaii.jpg" alt="Map of Hawaii" usemap="#mapHawaii" style="margin-left:20px; border-radius:20px;">
-
-  <map name="mapHawaii">
-	 <area shape="rect" coords="739,378,971,641" alt="Hawaii Island" href="">
-	 <area shape="rect" coords="539,213,777,343" alt="Maui Island" href="">
-	 <area shape="rect" coords="356,119,471,223" alt="Oahu Island" href="">
-	 <area shape="rect" coords="108,35,279,119" alt="Kauai Island" href="">
-  </map>
-  <!-- End of Fred -->
+	<div class = "bios">	
+		<img class = "profilepic" src = "fred.jpg">
+		<img class = "profilepic" src = "alvin.jpg">
+		<img class = "profilepic" src = "skyler.jpg">
+	
+		<div class = "textbox" style = "width:auto;">
+			<h2 style = "letter-spacing:10px; text-align:right;">Fred</h2>
+				<p>Praesent augue est, tincidunt vel varius sed, facilisis non magna. Etiam blandit, leo nec tempus aliquet, risus urna dapibus sem, quis euismod lectus felis commodo quam. Morbi vel odio ut sapien porttitor fringilla. Etiam rutrum mauris hendrerit, pellentesque nisl et, sodales ante. Pellentesque dapibus accumsan enim, ac molestie lacus molestie ac. Ut vitae erat ac sem posuere eleifend nec id quam. Duis ultrices sagittis neque, vel semper ligula varius nec.</p>
+		</div>
+		
+		<div class = "textbox"style = "width:auto;">
+		<h2 style = "letter-spacing:10px; text-align:right;">Alvin</h2>
+			<p>Praesent augue est, tincidunt vel varius sed, facilisis non magna. Etiam blandit, leo nec tempus aliquet, risus urna dapibus sem, quis euismod lectus felis commodo quam. Morbi vel odio ut sapien porttitor fringilla. Etiam rutrum mauris hendrerit, pellentesque nisl et, sodales ante. Pellentesque dapibus accumsan enim, ac molestie lacus molestie ac. Ut vitae erat ac sem posuere eleifend nec id quam. Duis ultrices sagittis neque, vel semper ligula varius nec.</p>
+		</div>
+				<div class = "textbox"style = "width:auto;">
+		<h2 style = "letter-spacing:10px; text-align:right;">Skyler</h2>
+			<p>Praesent augue est, tincidunt vel varius sed, facilisis non magna. Etiam blandit, leo nec tempus aliquet, risus urna dapibus sem, quis euismod lectus felis commodo quam. Morbi vel odio ut sapien porttitor fringilla. Etiam rutrum mauris hendrerit, pellentesque nisl et, sodales ante. Pellentesque dapibus accumsan enim, ac molestie lacus molestie ac. Ut vitae erat ac sem posuere eleifend nec id quam. Duis ultrices sagittis neque, vel semper ligula varius nec.</p>
+		</div>
 </div>
+
+
 <!--Updated the nav with links to animals, and improved the drop down -Skyler-->
 <div class="sidenav">
 
@@ -105,6 +120,8 @@ Last Modified: <script>document.write(document.lastModified)</script> <br>
 <!-- End of Fred--><br>
 Posted by: Alvin Ma
 <a style="text-align:center;" href="mailto:alvinma@hawaii.edu">alvinma@hawaii.edu</a>
+</div>
+</div>
 </div>
 
 </body>
