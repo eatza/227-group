@@ -12,32 +12,133 @@
 <!--Opacity filter Alvin-->
 <!--Horizontal ruler done-->
 <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:   #ffd1dc;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+
+.banner {
+  position: relative;
+  font-family: Arial;
+  
+}
+
+.bannertext {
+  position: absolute;
+  bottom: 400px;
+  right: 1120px;
+  background-color: yellow;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 0.3;
+  filter: alpha(opacity=30); 
+  
+}
+.active {
+  background-color: green;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: yellow;
+  text-align: center;
+}
+
+.main {
+  margin-left: 200px; 
+  font-size: 20px
+  padding: 0px 10px;
+}
+
+
+a:link {
+  color: red;
+}
+
+
+a:visited {
+  color: green;
+}
+
+
+a:hover {
+  color: hotpink;
+}
+
+
+a:active {
+  color: blue;
+}
+
 </style>
 </head>
-
 <body>
-<!--Styled the banner -Skyler-->
-<div class = "banner">
-	<div class="bannertext">
-		<h1>Welcome to FAS group website</h1>
-		<h2>What a beautiful sunrise</h2>
-	</div>
+
+<div class="banner">
+  <img src="banner.jpg" alt="Nature" style="width:100%;">
+  <div class="bannertext">
+    <hr>Welcome to FAS group website</hr>
+    <hr>What a beautiful sunrise</hr>
+  </div>
 </div>
 
 <div class="main">
-<!--Styled the text boxes -Skyler-->
-	<div class = "textbox">
-		<h2>Lorem Ipsum</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim neque viverra, rhoncus libero vel, gravida augue. Sed congue semper ipsum quis malesuada. Integer porta nisl metus, nec tempor tellus fermentum vel. Suspendisse facilisis vulputate sollicitudin. Phasellus a velit diam. Vivamus sed dui nec odio tristique tincidunt. Cras eu rutrum orci. Praesent quam felis, maximus sed dolor quis, convallis scelerisque nisl. Nunc erat lectus, semper sed congue non, sodales a quam. Donec orci orci, bibendum sed elit et, pellentesque fermentum erat. Mauris lacinia convallis elit at faucibus. Donec vestibulum eu sapien vitae varius. Nunc pellentesque ex dolor, molestie efficitur arcu luctus in. Nam quis condimentum turpis. Duis sit amet porta nulla. Aenean in erat ornare, hendrerit lectus nec, eleifend justo.<p>
-
-		<p>Praesent augue est, tincidunt vel varius sed, facilisis non magna. Etiam blandit, leo nec tempus aliquet, risus urna dapibus sem, quis euismod lectus felis commodo quam. Morbi vel odio ut sapien porttitor fringilla. Etiam rutrum mauris hendrerit, pellentesque nisl et, sodales ante. Pellentesque dapibus accumsan enim, ac molestie lacus molestie ac. Ut vitae erat ac sem posuere eleifend nec id quam. Duis ultrices sagittis neque, vel semper ligula varius nec.</p>
-	</div>
-  <div class = "textbox">
+  <h2>This will be heading</h2>
+  <p>Content.Content.Content.Content.Content.Content.Content.Content.Content.Content.<br></p>
   <p>Some random text..</p>
-  </div>
   <!--Image map by Fred -->
   <!-- This image map sets the Hawaii islands as clickables links -->
-  <img src="mapHawaii.jpg" alt="Map of Hawaii" usemap="#mapHawaii" style="margin-left:20px; border-radius:20px;">
+  <img src="mapHawaii.jpg" alt="Map of Hawaii" usemap="#mapHawaii" style="text-align:center">
 
   <map name="mapHawaii">
 	 <area shape="rect" coords="739,378,971,641" alt="Hawaii Island" href="">
@@ -47,40 +148,22 @@
   </map>
   <!-- End of Fred -->
 </div>
-<!--Updated the nav with links to animals, and improved the drop down -Skyler-->
-<div class="sidenav">
 
-	<a href="home.htm">Home</a>
-	<a href="about.htm">About Us</a>
-	<a href="contact.htm">Contact</a>
-	
-	<button class="dropdown-btn">Sea Animals
-		<i class="fa fa-caret-down"></i>
-	</button>
-	<div class="dropdown-container">
-		<a href="#">Monk Seal (Llio-holo-i-ka-uaua)</a>
-		<a href="#">Sea Turtle (Honu)</a>
-		<a href="moray.htm">Moray Eel (Puhi)</a>
-	</div>
-	
-	<button class="dropdown-btn">Air Animals
-		<i class="fa fa-caret-down"></i>
-	</button>
-    <div class="dropdown-container">
-		<a href="#">[Alvin's Bird; Seagull?]</a>
-		<a href="#">Hawk ('Iolani)</a>
-		<a href="#">Horay Bat (ʻōpeʻapeʻa)</a>
-  </div>
-  
-	<button class="dropdown-btn">Land Animals
-		<i class="fa fa-caret-down"></i>
-	</button>
+
+<div class="sidenav">
+  <a href="home.htm">HomePage</a>
+  <a href="service.htm">Services</a>
+  <a href="contact.htm">Contact</a>
+  <button class="dropdown-btn">Alvin three Animal Pages 
+    <i class="fa fa-caret-down"></i>
+  </button>
   <div class="dropdown-container">
-    <a href="#">Mongoose (Manakuke)</a>
-    <a href="#">Coquie frog</a>
-    <a href="#">Feral pig (Pua‘a)</a>
+    <a href="Seagull.htm">Seagull</a>
+    <a href="bat.htm">Bat</a>
+    <a href="mongoose.htm">Mongoose</a>
   </div>
-</div>
+
+
 
 <script>
 var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -98,14 +181,13 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script>
-
 <div class="footer">
 <!--Fred, the below line gets automatically sets the last modified date and time. -->
 Last Modified: <script>document.write(document.lastModified)</script> <br>
 <!-- End of Fred--><br>
 Posted by: Alvin Ma
-<a style="text-align:center;" href="mailto:alvinma@hawaii.edu">alvinma@hawaii.edu</a>
+<a style="text-align:center;padding-left:0px;padding-bottom: 25px;" href="mailto:alvinma@hawaii.edu">alvinma@hawaii.edu</a>
 </div>
-
 </body>
+
 </html> 

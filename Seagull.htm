@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hawaiian Animal Encyclopedia</title>
+<meta name="Hawaiian Animals" content="">
+<meta name="ITS-227 Group" content="Hawaii", "Animals">
+<link rel="stylesheet" href="hawaiiananimals.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:  #ffd1dc;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.banner {
+  position: relative;
+  font-family: Arial;
+}
+
+.bannertext {
+  position: absolute;
+  bottom: 400px;
+  right: 1120px;
+  background-color: yellow;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 0.3;
+  filter: alpha(opacity=30); 
+}
+.active {
+  background-color: green;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:25;
+  background-color: black;
+  color: yellow;
+  text-align: center;
+}
+.main {
+  margin-left: 200px; 
+  font-size: 20px; 
+  padding: 0px 10px;
+    width: 150px;
+  height: 80px;
+  background-color: yellow;
+  -ms-transform: scaleY(1.5); /* IE 9 */
+  -webkit-transform: scaleY(1.5); /* Safari 3-8 */
+  transform: scaleY(1.5);
+  text-align: center;
+}
+
+
+.seagull{
+text-align: center;
+text-indent: 50px;
+font-size: 12;
+}
+
+a:link {
+  color: red;
+}
+
+
+a:visited {
+  color: green;
+}
+
+
+a:hover {
+  color: hotpink;
+}
+
+
+a:active {
+  color: blue;
+}
+
+
+.video{
+text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="banner">
+  <img src="banner.jpg" alt="Nature" style="width:100%;">
+  <div class="bannertext">
+    <hr>Welcome to FAS group website</hr>
+    <hr>What a beautiful sunrise</hr>
+  </div>
+</div>
+
+
+<div class="main">
+  <h2>Seagull</h2>
+</div>
+
+
+
+<div class="seagull picture">
+<img src="seagull.jpg" alt="Smiley face" height="420" width="420">
+</div>
+
+<div class="video">
+<video width="400" controls>
+  <source src="seagull.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+
+
+<div class="seagull">
+<p>  Seagull has strong body, elongated legs and webbed feet. Beak is slightly hooked and usually yellow in color. Seagulls are one of the rare animals that are able to drink salt water.</p>
+</div>
+
+
+
+<div class="sidenav">
+  <a href="home.htm">HomePage</a>
+  <a href="service.htm">Services</a>
+  <a href="contact.htm">Contact</a>
+  <button class="dropdown-btn">Alvin three Animal Pages 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="Seagull.htm">Seagull</a>
+    <a href="bat.htm">Bat</a>
+    <a href="mongoose.htm">Mongoose</a>
+  </div>
+
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+<div class="footer">
+<!--Fred, the below line gets automatically sets the last modified date and time. -->
+Last Modified: <script>document.write(document.lastModified)</script> <br>
+<!-- End of Fred--><br>
+Posted by: Alvin Ma
+<a style="text-align:center;padding-left:0px;padding-bottom: 25px;" href="mailto:alvinma@hawaii.edu">alvinma@hawaii.edu</a>
+</div>
+</body>
+</html> 
