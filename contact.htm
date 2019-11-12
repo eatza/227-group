@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hawaiian Animal Encyclopedia</title>
 <meta name="Hawaiian Animals" content="">
@@ -26,16 +27,18 @@ tr:nth-child(even) {
 </head>
 <body>
 
+
 <div class = "banner">
 	<div class="bannertext">
 		<h1>Contact Team FAS</h1>
 		<h2>Or Don't...</h2>
 	</div>
 </div>
-
-<div class="main">
+<div class = "main">
+<div class = textbox>
   <h2 style = "text-align:center">Contact</h2>
   <p style = "text-align:center">Have any questions or wish to provide feedback? Please refer to our contact information below.<br></p>
+  
   <table>
   <tr>
     <th>Website Developer</th>
@@ -58,10 +61,8 @@ tr:nth-child(even) {
     <td><a href="mailto:alvinma@hawaii.edu">fwthomas@hawaii.edu</a></td>
 </table>
 
-</body>
-</html>
 </div>
-<div>
+<div class = "textbox">
 	<form action="http://webdevbasics.net/scripts/demo.php">
 		<fieldset>
 			<legend>
@@ -76,9 +77,11 @@ tr:nth-child(even) {
 			Email address:<br>
 			<input type="email" name="email" value="">
 			<br>
-			<input type="submit" value="Submit">
-		<fieldset>
+			<button type="submit">Submit</button>
+			<button type="reset" value="Reset">Reset</button>
+		</fieldset>
 	</form>
+
 </div>
 
 <div class="sidenav">
@@ -102,7 +105,7 @@ tr:nth-child(even) {
     <div class="dropdown-container">
 		<a href="#">[Alvin's Bird; Seagull?]</a>
 		<a href="#">Hawk ('Iolani)</a>
-		<a href="#">Horay Bat (ʻōpeʻapeʻa)</a>
+		<a href="hoary.htm">Hoary Bat (ʻōpeʻapeʻa)</a>
   </div>
   
 	<button class="dropdown-btn">Land Animals
@@ -132,7 +135,7 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script>
-
+</div>
 <div class="footer">
 <!--Fred, the below line gets automatically sets the last modified date and time. -->
 Last Modified: <script>document.write(document.lastModified)</script> <br>
