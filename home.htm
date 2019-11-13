@@ -13,96 +13,100 @@
 <!--Opacity filter Alvin-->
 <!--Horizontal ruler done-->
 <style>
-<!--This is the style for the slide show -->
-slideshow{
-
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-
 .mySlides {display: none}
 img {vertical-align: middle;}
-<!--> Slideshow container <-->
+
+/* Slideshow container */
 .slideshow-container {
- max-height: 1280;
- position: relative;
- margin: auto;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding:40px;
+  background-color:black;
 }
-<!-- Next & previous buttons-->
+
+/* Next & previous buttons */
 .prev, .next {
- cursor: pointer;
- position: absolute;
- top: 50%;
- width: auto;
- padding: 16px;
- margin-top: -22px;
- color: white;
- font-weight: bold;
- font-size: 18px;
- transition: 0.6s ease;
- border-radius: 0 3px 3px 0;
- user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
-<!--> Position the "next button" to the right <-->
+
+/* Position the "next button" to the right */
 .next {
- right: 0;
- border-radius: 3px 0 0 3px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
-<!--> On hover, add a black background color with a little bit see-through<-->
+
+/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
- background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
-<!--> Caption text <-->
+
+/* Caption text */
 .text {
- color: #f2f2f2;
- font-size: 15px;
- padding: 8px 12px;
- position: absolute;
- bottom: 8px;
- width: 100%;
- text-align: center;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
-<!-->Number text (1/3 etc) <-->
+
+/* Number text (1/3 etc) */
 .numbertext {
- color: #f2f2f2;
- font-size: 12px;
- padding: 8px 12px;
- position: absolute;
- top: 0;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
-<!--> The dots/bullets/indicators <-->
+
+/* The dots/bullets/indicators */
 .dot {
- cursor: pointer;
- height: 10px;
- width: 10px;
- margin: 0 2px;
- background-color: #bbb;
- border-radius: 50%;
- display: inline-block;
- transition: background-color 0.6s ease;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
+
 .active, .dot:hover {
- background-color: #717171;
+  background-color: #717171;
 }
- <!-->Fading animation <-->
+
+/* Fading animation */
 .fade {
- -webkit-animation-name: fade;
- -webkit-animation-duration: 3s;
- animation-name: fade;
- animation-duration: 3s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
- from {opacity: .4}
- to {opacity: 1}
+  from {opacity: .4} 
+  to {opacity: 1}
 }
+
 @keyframes fade {
- from {opacity: .4}
- to {opacity: 1}
+  from {opacity: .4} 
+  to {opacity: 1}
 }
-<!--> On smaller screens, decrease text size <-->
-@media only screen and (max-width: 300px) {
- .prev, .next,.text {font-size: 11px}
-}
-}
+
 }
 <!-- end of slide show style -->
 </style>
@@ -118,33 +122,41 @@ img {vertical-align: middle;}
 </div>
 
 <div class="main">
-<!-- code for body -->
- <div class = "slideshow">
-        <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="alvin.jpg" style = "width:100%">
-          <div class="text">Caption Text</div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="fred.jpg" style = "width:100%; height:557px;">
-          <div class="text">Caption Two</div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="eel_jaws.jpg" style = "width:100%; height:557px;" >
-          <div class="text">Caption Three</div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-		</div>       
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="fred.jpg" class = "center" style="width:auto; max-width:500px; height:auto; max-height:500px;">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="alvin.jpg" class = "center" style="width:auto; max-width:500px; height:auto; max-height:500px;">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="skyler.jpg" class = "center"style="width:auto; max-width:500px; height:auto; max-height:500px;">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
 <script>
 var slideIndex = 0;
 showSlides();
@@ -165,7 +177,6 @@ function showSlides() {
  setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 </script>
-</div>
 <!--Styled the text boxes -Skyler-->
 	<div class = "textbox">
 		<h2>Lorem Ipsum</h2>
@@ -187,6 +198,7 @@ function showSlides() {
 	 <area shape="rect" coords="108,35,279,119" alt="Kauai Island" href="kauailist.htm">
   </map>
   <!-- End of Fred -->
+</div>
 </div>
 <!--Updated the nav with links to animals, and improved the drop down -Skyler-->
 <div class="sidenav">
