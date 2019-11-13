@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<link rel="icon" href="favicon.png" type="image/gif" sizes="16x16"> <!--favicon-->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--reactive page -->
+	<title>Hawaiian Animal Encyclopedia: Moray Eel (Puhi)</title> <!-- title of our page-->
+	<meta name="Hawaiian Animals" content=""> 
+	<meta name="ITS-227 Group" content="Hawaii", "Animals">
+	<link rel="stylesheet" href="hawaiiananimals.css"> <!--Calling the CSS code. -->
+	<!--Nav bar finished Alvin-->
+	<!--Footer Alvin-->
+	<!--Banner Alvin-->
+	<!--Opacity filter Alvin-->
+	<!--Horizontal ruler done-->
+	</head>
+	<body>
+	<!--Styled the banner -Skyler-->
+		<div class = "banner">
+			<div class="bannertext">
+				<h1>Seagulls</h1>
+			</div>
+		</div>
+
+		<div class="main">
+			<!--Styled the text boxes -Skyler-->
+			<div class = "textbox">
+			<h2>Information</h2>
+				Seagull has strong body, elongated legs and wSeagull has strong body, elongated legs and w Seagull has strong body, elongated legs and webbed feet. Beak is slightly hooked and usually yellow in color. Seagulls are one of the rare animals that are able to drink salt water. They have special glands (located above the eyes) which eliminate excess salt from the body.Seagull has strong body, elongated legs and webbed feet. Beak is slightly hooked and usually yellow in color. Seagulls are one of the rare animals that are able to drink salt water. They have special glands (located above the eyes) which eliminate excess salt from the body.Seagull has strong body, elongated legs and webbed feet. Beak is slightly hooked and usually yellow in color. Seagulls are one of the rare animals that are able to drink salt water. They have special glands (located above the eyes) which eliminate excess salt from the body.Seagull has strong body, elongated legs and webbed feet. Beak is slightly hooked and usually yellow in color. Seagulls are one of the rare animals that are able to drink salt water. They have special glands (located above the eyes) which eliminate excess salt from the body.
+			<video width="320" height="240"  controls>
+				<source src="seagull.mp4" type="video/mp4" alt="Videos of seagulls.">
+				Your browser does not support the video tag.
+			</video> 
+			</div>
+			<div class = "textbox">
+				<h2 style = "font-size:36px;letter-spacing:6px;">Seagull</h2>
+				<a href = "Seagull.jpg"target="_blank"><img src = "Seagull.jpg" style = "width:40%;max-width:40%; z-index:0;
+				float:right;position:relative;" alt = "Seagulls"></a>
+				<br>
+				Seagull has strong body, elongated legs and wSeagull has strong body, elongated legs and wSeagull has strong body, elongated legs and wSeagull has strong body, elongated legs and wSeagull has strong body, elongated legs and wSeagull has strong body, elongated legs and wSeagull has strong body, elongated legs and wSeagull has strong body, elongated legs and w Seagull has strong body, elongated legs and webbed feet. Beak is slightly hooked and usually yellow in color. Seagulls are one of the rare animals that are able to drink salt water. They have special glands (located above the eyes) which eliminate excess salt from the body.
+			</div>
+
+<!--Updated the nav with links to animals, and improved the drop down -Skyler-->
+<div class="sidenav">
+  <a href="home.htm">Home</a>
+  <a href="about.htm">About Us</a>
+  <a href="contact.htm">Contact</a>
+  <button class="dropdown-btn">Sea Animals
+    <i class="fa fa-caret-down"></i>
+  </button>
+    <div class="dropdown-container">
+    <a href="monkseal.htm">Monk Seal (Llio-holo-i-ka-uaua)</a>
+    <a href="turtle.htm">Sea Turtle (Honu)</a>
+    <a href="moray.htm">Moray Eel (Puhi)</a>
+  </div>
+    <button class="dropdown-btn">Air Animals
+    <i class="fa fa-caret-down"></i>
+  </button>
+    <div class="dropdown-container">
+    <a href="seagull.htm">[Alvin's Bird; Seagull?]<a>
+    <a href="hawaiianhawk.htm">Hawk ('Iolani)</a>
+    <a href="hoary.htm">Hoary Bat (ʻōpeʻapeʻa)</a>
+  </div>
+    <button class="dropdown-btn">Land Animals
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="mongoose.htm">Mongoose (Manakuke)</a>
+    <a href="coquifrog.htm">Coqui frog</a>
+    <a href="chicken.htm">Chicken (Moa)</a>
+  </div>
+</div>
+
+<!--code for the drop down navigation-->
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+</div>
+
+
+<div class="footer">
+<!--Fred, the below line gets automatically sets the last modified date and time. -->
+Last Modified: <script>document.write(document.lastModified)</script> <br>
+<!-- End of Fred--><br>
+Posted by: Alvin Ma
+<a style="text-align:center;" href="mailto:alvinma@hawaii.edu">alvinma@hawaii.edu</a>
+</div>
+</body>
+</html> 
