@@ -19,9 +19,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
-  margin: auto;
   padding:40px;
   background-color:black;
 }
@@ -127,21 +125,57 @@ img {vertical-align: middle;}
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="fred.jpg" class = "center" style="width:auto; max-width:500px; height:auto; max-height:500px;">
-  <div class="text">Caption Text</div>
+  <div class="numbertext">1 / 9</div>
+  <img src="eel.jpg" class = "center">
+  <div class="text">Moray Eel</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="alvin.jpg" class = "center" style="width:auto; max-width:500px; height:auto; max-height:500px;">
-  <div class="text">Caption Two</div>
+  <div class="numbertext">2 / 9</div>
+  <img src="flying_hoary.jpg" class = "center">
+  <div class="text">Hawaiian Horay Bat</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="skyler.jpg" class = "center"style="width:auto; max-width:500px; height:auto; max-height:500px;">
-  <div class="text">Caption Three</div>
+  <div class="numbertext">3 / 9</div>
+  <img src="chickenchillin.jpg" class = "center">
+  <div class="text">Chicken Chillin'</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 9</div>
+  <img src="hawaiianhawk.jpg" class = "center">
+  <div class="text">Hawaiian Hawk</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 9</div>
+  <img src="mongoose.jpg" class = "center">
+  <div class="text">Mongoose</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 9</div>
+  <img src="seagull.jpg" class = "center">
+  <div class="text">Seagull</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 9</div>
+  <img src="seal.jpg" class = "center">
+  <div class="text">Monk Seal</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 9</div>
+  <img src="turtle.jpg" class = "center">
+  <div class="text">Sea Turtle</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 9</div>
+  <img src="coquifrog.jpg" class = "center">
+  <div class="text">Coqui Frog</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -151,9 +185,17 @@ img {vertical-align: middle;}
 <br>
 
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+
+	<span class="dot" onclick="currentSlide(1)"></span> 
+	<span class="dot" onclick="currentSlide(2)"></span> 
+	<span class="dot" onclick="currentSlide(3)"></span> 
+	<span class="dot" onclick="currentSlide(4)"></span> 
+	<span class="dot" onclick="currentSlide(5)"></span> 
+	<span class="dot" onclick="currentSlide(6)"></span> 
+	<span class="dot" onclick="currentSlide(7)"></span> 
+	<span class="dot" onclick="currentSlide(8)"></span> 
+	<span class="dot" onclick="currentSlide(9)"></span> 
+  
 </div>
 
 
@@ -218,7 +260,7 @@ function showSlides() {
   </button>
     <div class="dropdown-container">
     <a href="seagull.htm">Seagull<a>
-    <a href="#">Hawk ('Iolani)</a>
+    <a href="hawaiianhawk.htm">Hawk ('Iolani)</a>
     <a href="hoary.htm">Hoary Bat (ʻōpeʻapeʻa)</a>
   </div>
     <button class="dropdown-btn">Land Animals
@@ -226,7 +268,7 @@ function showSlides() {
   </button>
   <div class="dropdown-container">
     <a href="mongoose.htm">Mongoose (Manakuke)</a>
-    <a href="coquiFrog.htm">Coquie frog</a>
+    <a href="coquifrog.htm">Coquie frog</a>
     <a href="chicken.htm">Chicken (Moa)</a>
   </div>
 </div>
